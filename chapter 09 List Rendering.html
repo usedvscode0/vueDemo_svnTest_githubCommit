@@ -7,31 +7,31 @@
 </head>
 <body>
 <div id="app">
-	<ul>
-		<li v-for="item,index in items" :key="index">
-		{{index}}{{ item.message }}
-		</li>
-	</ul>
-	<ul>
-		<li v-for="value, key in object">
-			{{key}} : {{ value }}
-		</li>
-	</ul>
+    <ul>
+        <li v-for="item,index in items" :key="index">
+        {{index}}{{ item.message }}
+        </li>
+    </ul>
+    <ul>
+        <li v-for="value, key in object">
+            {{key}} : {{ value }}
+        </li>
+    </ul>
 </div>
 <script type="text/javascript">
 var vm = new Vue({
-	el : "#app",
-	data : {
-		items : [
-			{ message: 'Foo' },
-			{ message: 'Bar' }
-		],
-		object: {
-			title: 'How to do lists in Vue',
-			author: 'Jane Doe',
-			publishedAt: '2016-04-10'
-		}
-	}
+    el : "#app",
+    data : {
+        items : [
+            { message: 'Foo' },
+            { message: 'Bar' }
+        ],
+        object: {
+            title: 'How to do lists in Vue',
+            author: 'Jane Doe',
+            publishedAt: '2016-04-10'
+        }
+    }
 });
 </script>
 </body>
